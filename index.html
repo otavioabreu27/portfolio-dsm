@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Otávio Abreu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .hero.is-primary {
+            background-color: #363636 !important;
+        }
+
+        .hero.is-fullheight {
+            min-height: 100vh;
+        }
+
+        .hero .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .contact-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .columns.centered {
+            align-items: center;
+        }
+
+        .box:hover {
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+
+        .title {
+            font-size: 2rem;
+            color: #363636;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #363636;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background-color: #f5f5f5;
+            color: #363636;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 15px 5px 0px 0px;
+            font-size: 0.9rem;
+        }
+
+        .image-container img {
+            width: 30%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.querySelector('.dropdown-trigger').addEventListener('click', () => {
+                    dropdown.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section class="hero is-primary is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">Otávio Abreu dos Santos Silva</h1>
+                <h2 class="subtitle">Desenvolvedor de Software</h2>
+                <div class="contact-icons">
+                    <a href="mailto:otavio.abreu96@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/o-abreu/" target="_blank" title="LinkedIn"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/otavioabreu27/" target="_blank" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="buttons">
+                    <a href="#apresentacao" class="button is-light">Apresentação</a>
+                    <a href="#projetos" class="button is-light">Projetos</a>
+                    <a href="#habilidades" class="button is-light">Habilidades</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <span id="apresentacao"></span>
+            <div class="columns centered">
+                <div class="column is-one-third contact-container">
+                    <figure class="image is-256x256">
+                        <img class="is-rounded" src="profile.jpg" alt="Foto de Otávio">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h3 class="title">Apresentação</h3>
+                    <p>Olá, sou o Otávio, um desenvolvedor de software com foco em backend com experiência na construção
+                        de soluções escaláveis e arquiteturas robustas. Minha atuação envolve a modernização de
+                        aplicações legadas, otimização de desempenho e desenvolvimento de APIs eficientes para análise e
+                        processamento de dados. Possuo habilidades em diversas tecnologias, incluindo Python, Java,
+                        Rust, e frameworks como FastAPI, Spring Boot e NestJS. Tenho experiência em bancos de dados
+                        relacionais e NoSQL, além de práticas DevOps, como Docker, Swarm e CI/CD. Busco constantemente
+                        aprimorar minha expertise para entregar soluções de alto valor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 id="experiencia" class="title">Experiência Profissional</h3>
+            <div class="box">
+                <h4 class="subtitle">Sensedia - Open Finance Team (Fev/2025 - Presente)</h4>
+                <p>Desenvolvimento de APIs para integração com sistemas financeiros no setor de Open Finance, garantindo
+                    segurança, escalabilidade e conformidade com regulamentações do mercado.</p>
+                <div>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">JUnit</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Kubernetes</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+            </div>
+            <div class="box">
+                <h4 class="subtitle">Rentelck - Biomas BR (Nov/2024 - Jan/2025)</h4>
+                <p>Desenvolvimento do Foco10, sistema de processamento de dados de focos de incêndio a partir do
+                    satélite GOES-16, com monitoramento em tempo real.</p>
+                <div>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Numpy</span>
+                    <span class="tech-tag">httpx</span>
+                    <span class="tech-tag">Pandas</span>
+                </div>
+            </div>
+            <div class="box">
+                <h4 class="subtitle">INPE - Instituto Nacional de Pesquisas Espaciais (Jan/2023 - Nov/2024)</h4>
+                <p>Atuação como desenvolvedor fullstack, modernizando aplicações legadas, otimizando performance e
+                    desenvolvendo APIs para análise de dados estatísticos.</p>
+                <div>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Postgis</span>
+                    <span class="tech-tag">Docker Swarm</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Portainer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section project-section">
+        <div class="container">
+            <h3 id="projetos" class="title">Projetos</h3>
+            <div class="box">
+                <h4 class="subtitle">ABP 1º Semestre - Py.nk</h4> 
+                <p>Sistema de internet banking com funções básicas de funcionamento e uma interface de administração para gerenciamento da aplicação. Permite o cadastro e login de usuários, a realização de consultas de extratos, movimentações financeiras como depósitos, saques e transferências, além da geração de comprovantes para cada transação. O sistema também possibilita solicitações de atualização de dados e fechamento de contas, além de contar com um painel administrativo para aprovação ou rejeição de solicitações, conferência de depósitos e gerenciamento de agências e gerentes. Além disso, o sistema implementa mecanismos de controle para arredondamento de valores e cálculo de rendimento de poupança.</p>
+                <div class="columns is-multiline is-centered">
+                    <div class="column is-one-third">
+                        <figure class="image is-3by2">
+                            <img src="tela-cadastro-pynk.png" alt="Tela de cadastro">
+                        </figure>
+                    </div>
+                    <div class="column is-one-third">
+                        <figure class="image is-3by2">
+                            <img src="tela-main-pynk.png" alt="Tela principal do sistema">
+                        </figure>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2025 Otávio Abreu. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
