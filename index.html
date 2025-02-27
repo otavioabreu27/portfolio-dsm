@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Otávio Abreu</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="lib/bulma.min.css">
+    <link rel="stylesheet" href="lib/fa.all.min.css">
     <style>
         .hero.is-primary {
             background-color: #363636 !important;
@@ -74,17 +74,7 @@
             height: auto;
             border-radius: 10px;
         }
-
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.dropdown').forEach(dropdown => {
-                dropdown.querySelector('.dropdown-trigger').addEventListener('click', () => {
-                    dropdown.classList.toggle('is-active');
-                });
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -182,8 +172,15 @@
         <div class="container">
             <h3 id="projetos" class="title">Projetos</h3>
             <div class="box">
-                <h4 class="subtitle">ABP 1º Semestre - Py.nk</h4> 
-                <p>Sistema de internet banking com funções básicas de funcionamento e uma interface de administração para gerenciamento da aplicação. Permite o cadastro e login de usuários, a realização de consultas de extratos, movimentações financeiras como depósitos, saques e transferências, além da geração de comprovantes para cada transação. O sistema também possibilita solicitações de atualização de dados e fechamento de contas, além de contar com um painel administrativo para aprovação ou rejeição de solicitações, conferência de depósitos e gerenciamento de agências e gerentes. Além disso, o sistema implementa mecanismos de controle para arredondamento de valores e cálculo de rendimento de poupança.</p>
+                <h4 class="subtitle">ABP 1º Semestre - Py.nk</h4>
+                <p>Sistema de internet banking com funções básicas de funcionamento e uma interface de administração
+                    para gerenciamento da aplicação. Permite o cadastro e login de usuários, a realização de consultas
+                    de extratos, movimentações financeiras como depósitos, saques e transferências, além da geração de
+                    comprovantes para cada transação. O sistema também possibilita solicitações de atualização de dados
+                    e fechamento de contas, além de contar com um painel administrativo para aprovação ou rejeição de
+                    solicitações, conferência de depósitos e gerenciamento de agências e gerentes. Além disso, o sistema
+                    implementa mecanismos de controle para arredondamento de valores e cálculo de rendimento de
+                    poupança.</p>
                 <div class="tags">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">Flask</span>
@@ -195,7 +192,10 @@
             </div>
             <div class="box">
                 <h4 class="subtitle">ABP 2º Semestre - TSwift</h4>
-                <p>Sistema para controle de recebimento de grãos no setor agroindustrial. Permite o gerenciamento da entrada, inspeção e acompanhamento em tempo real das mercadorias recebidas. Conta com três perfis de usuários (administrativo, operacional e gerencial) e funcionalidades para cadastro de usuários, produtos e transportadoras, além de controle de acesso e geração de relatórios gerenciais.</p>
+                <p>Sistema para controle de recebimento de grãos no setor agroindustrial. Permite o gerenciamento da
+                    entrada, inspeção e acompanhamento em tempo real das mercadorias recebidas. Conta com três perfis de
+                    usuários (administrativo, operacional e gerencial) e funcionalidades para cadastro de usuários,
+                    produtos e transportadoras, além de controle de acesso e geração de relatórios gerenciais.</p>
                 <div class="tags">
                     <span class="tech-tag">Typescript</span>
                     <span class="tech-tag">Prisma</span>
@@ -203,11 +203,14 @@
                     <span class="tech-tag">Bootstrap</span>
                     <span class="tech-tag">MySQL</span>
                 </div>
-                <p><a href="https://github.com/TSwiftDSM/BACKEND-TSWIFT-API" target="_blank">Repositório no GitHub</a></p>
+                <p><a href="https://github.com/TSwiftDSM/BACKEND-TSWIFT-API" target="_blank">Repositório no GitHub</a>
+                </p>
             </div>
             <div class="box">
                 <h4 class="subtitle">ABP 3º Semestre - TerraGeo Manager</h4>
-                <p>Plataforma para gestão e monitoramento de áreas agrícolas, com funcionalidades estatísticas para acompanhamento da produtividade e administração. Permite atribuir e classificar quadrículas, oferecendo uma visão detalhada do desempenho da produção.</p>
+                <p>Plataforma para gestão e monitoramento de áreas agrícolas, com funcionalidades estatísticas para
+                    acompanhamento da produtividade e administração. Permite atribuir e classificar quadrículas,
+                    oferecendo uma visão detalhada do desempenho da produção.</p>
                 <div class="tags">
                     <span class="tech-tag">Typescript</span>
                     <span class="tech-tag">MongoDB</span>
@@ -218,7 +221,11 @@
             </div>
             <div class="box">
                 <h4 class="subtitle">ABP 4º Semestre - Nutrilife</h4>
-                <p><p>O Nutrilife é um aplicativo de controle nutricional. Ele permite que usuários preencham uma anamnese e calculem seu metabolismo basal. Além disso, o sistema oferece funcionalidades como monitoramento de progresso, substituição de alimentos na dieta e integração com dispositivos inteligentes para um acompanhamento detalhado da nutrição.</p>
+                <p>
+                <p>O Nutrilife é um aplicativo de controle nutricional. Ele permite que usuários preencham uma anamnese
+                    e calculem seu metabolismo basal. Além disso, o sistema oferece funcionalidades como monitoramento
+                    de progresso, substituição de alimentos na dieta e integração com dispositivos inteligentes para um
+                    acompanhamento detalhado da nutrição.</p>
                 <div class="tags">
                     <span class="tech-tag">Typescript</span>
                     <span class="tech-tag">PostgreSQL</span>
@@ -231,55 +238,34 @@
         </div>
     </section>
 
-    <section class="section">
+    <section id="habilidades" class="section">
         <div class="container">
             <h3 id="projetos" class="title">Habilidades</h3>
             <div class="box">
-                <h4 class="subtitle">ABP 1º Semestre - Py.nk</h4> 
-                <p>Sistema de internet banking com funções básicas de funcionamento e uma interface de administração para gerenciamento da aplicação. Permite o cadastro e login de usuários, a realização de consultas de extratos, movimentações financeiras como depósitos, saques e transferências, além da geração de comprovantes para cada transação. O sistema também possibilita solicitações de atualização de dados e fechamento de contas, além de contar com um painel administrativo para aprovação ou rejeição de solicitações, conferência de depósitos e gerenciamento de agências e gerentes. Além disso, o sistema implementa mecanismos de controle para arredondamento de valores e cálculo de rendimento de poupança.</p>
-                <div class="tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Flask</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                </div>
-                <p><a href="https://github.com/pynkAPI/API-1-DSM_22" target="_blank">Repositório no GitHub</a></p>
+                <h4 class="subtitle">Hard Skills</h4>
+                <p><strong>Linguagens:</strong> Python, JavaScript/TypeScript, Java, Rust, C++</p>
+                <p><strong>Frameworks e Bibliotecas:</strong> Django, FastAPI, NestJS, React, Next.js, Spring Boot,
+                    Quarkus</p>
+                <p><strong>Banco de Dados:</strong> PostgreSQL/PostGIS, MySQL, MongoDB, Redis</p>
+                <p><strong>DevOps:</strong> Docker, Swarm, Kubernetes, AWS, GitHub Actions, Linux</p>
             </div>
             <div class="box">
-                <h4 class="subtitle">ABP 2º Semestre - TSwift</h4>
-                <p>Sistema para controle de recebimento de grãos no setor agroindustrial. Permite o gerenciamento da entrada, inspeção e acompanhamento em tempo real das mercadorias recebidas. Conta com três perfis de usuários (administrativo, operacional e gerencial) e funcionalidades para cadastro de usuários, produtos e transportadoras, além de controle de acesso e geração de relatórios gerenciais.</p>
-                <div class="tags">
-                    <span class="tech-tag">Typescript</span>
-                    <span class="tech-tag">Prisma</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Bootstrap</span>
-                    <span class="tech-tag">MySQL</span>
-                </div>
-                <p><a href="https://github.com/TSwiftDSM/BACKEND-TSWIFT-API" target="_blank">Repositório no GitHub</a></p>
+                <h4 class="subtitle">Soft Skills</h4>
+                <p><strong>Resolução de Problemas:</strong> Habilidade em analisar e otimizar aplicações para melhor
+                    performance e escalabilidade.</p>
+                <p><strong>Trabalho em Equipe:</strong> Experiência em ambientes colaborativos, aplicando boas práticas
+                    de desenvolvimento e revisões de código.</p>
+                <p><strong>Autodidatismo:</strong> Aprendizado contínuo e adaptação a novas tecnologias e paradigmas.
+                </p>
+                <p><strong>Comunicação:</strong> Capacidade de explicar conceitos técnicos para diferentes públicos,
+                    facilitando decisões estratégicas.</p>
             </div>
             <div class="box">
-                <h4 class="subtitle">ABP 3º Semestre - TerraGeo Manager</h4>
-                <p>Plataforma para gestão e monitoramento de áreas agrícolas, com funcionalidades estatísticas para acompanhamento da produtividade e administração. Permite atribuir e classificar quadrículas, oferecendo uma visão detalhada do desempenho da produção.</p>
-                <div class="tags">
-                    <span class="tech-tag">Typescript</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">MUI</span>
-                </div>
-                <p><a href="https://github.com/TerraGeoManager" target="_blank">Repositório no GitHub</a></p>
-            </div>
-            <div class="box">
-                <h4 class="subtitle">ABP 4º Semestre - Nutrilife</h4>
-                <p><p>O Nutrilife é um aplicativo de controle nutricional. Ele permite que usuários preencham uma anamnese e calculem seu metabolismo basal. Além disso, o sistema oferece funcionalidades como monitoramento de progresso, substituição de alimentos na dieta e integração com dispositivos inteligentes para um acompanhamento detalhado da nutrição.</p>
-                <div class="tags">
-                    <span class="tech-tag">Typescript</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">DigitalOcean</span>
-                    <span class="tech-tag">Github Actions</span>
-                    <span class="tech-tag">ReactNative</span>
-                </div>
-                <p><a href="https://github.com/noctagroup/nutrilife" target="_blank">Repositório no GitHub</a></p>
+                <h4 class="subtitle">Práticas e Padrões</h4>
+                <p><strong>Padrões de Arquitetura:</strong> SOLID, Pub/Sub, MVC, Event-Driven Architecture (EDA)</p>
+                <p><strong>Boas Práticas de Desenvolvimento:</strong> Test-Driven Development (TDD), Object-Oriented
+                    Programming (OOP), Code Review, CI/CD</p>
+                <p><strong>Metodologias Ágeis:</strong> Scrum, Kanban</p>
             </div>
         </div>
     </section>
